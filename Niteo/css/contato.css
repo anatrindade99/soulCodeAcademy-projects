@@ -1,0 +1,204 @@
+/* ================================= */
+/* ====== ESTILIZAÇÃO CONTATO ======= */
+/* ================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+
+/* Global */
+body {
+  background: #fff;
+  font-size: 1.1em;
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  height: 90vh;
+}
+h1 {
+  font-size: 32px;
+  font-weight: 400;
+}
+h2 {
+  font-size: 28px;
+  font-weight: 400;
+  color: #c42323;
+}
+h3 {
+  font-size: 20px;
+  font-weight: 400;
+  color: #c42323;
+}
+h4 {
+  font-size: 0.85em;
+  color: #c42323;
+}
+p {
+  font-size: 1.1em;
+  color: #505050;
+}
+/* Header */
+#header {
+  width: 100%;
+  height: 80px;
+  background: linear-gradient(to top, #fff, #ccc);
+  display: flex;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+/* Menu */
+
+.search {
+  margin-left: 50px;
+  display: flex;
+  align-items: center;
+}
+.search input {
+  height: 25px;
+  background: transparent;
+  border: 1px solid #505050;
+}
+.search button {
+  height: 29px;
+  border: none;
+  background: #505050;
+  color: white;
+  transition: 0.4s;
+}
+.search button:hover {
+  background: #fff;
+  color: #c42323;
+}
+.nav_menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 85px;
+}
+.nav_menu ul {
+  display: flex;
+  margin-right: 60px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav_menu ul li a {
+  text-decoration: none;
+  padding: 5px 25px;
+  font-weight: 300;
+  color: #505050;
+  transition: 0.4s;
+}
+.nav_menu ul li a:hover {
+  color: #c42323;
+}
+.search img {
+  width: 70px;
+  margin-top: -7px;
+  margin-right: 30px;
+}
+
+/* Contato */
+
+.contato {
+  position: relative;
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: repeat(2, 800px);
+  grid-template-rows: 685px;
+  justify-content: center;
+  gap: 30px;
+  background: #fff;
+}
+.form {
+  width: 100;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  margin: 0 auto;
+}
+.form h2 {
+  text-align: center;
+  margin: 30px;
+  color: #5c2d91;
+}
+.form input,
+.form textarea {
+  width: 450px;
+  height: 35px;
+  margin: 10px;
+  border: none;
+  background: #efefef;
+  font-weight: 300;
+  font-size: 1em;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1.3px;
+}
+.form textarea {
+  height: 160px;
+}
+.btn {
+  width: 450px;
+  padding: 10px 0;
+  margin: 10px auto;
+  font-size: 1.2em;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  background: #5c2d91;
+  border: none;
+  color: #fff;
+  transition: 0.4s;
+}
+.btn:hover {
+  background: #ebebeb;
+  color: #5c2d91;
+  border: 1px solid #5c2d91;
+}
+.mapa {
+  margin-top: 85px;
+}
+/* Footer */
+
+footer {
+  width: 100%;
+  background: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 30px 0;
+}
+footer .endereco,
+.endereco p {
+  color: #262626;
+  font-size: 0.9em;
+  text-align: center;
+}
+.endereco img {
+  margin-bottom: 10px;
+}
+
+footer .midiafoot {
+  text-align: center;
+}
+
+footer .midiafoot .fab {
+  font-size: 1.5em;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+footer .midiafoot .fab:hover {
+  color: #5c2d91;
+}
+
+footer .midiafoot h4 {
+  margin: 20px 0 10px;
+  color: #5c2d91;
+}
+
+footer .midiafoot p {
+  font-size: 0.9em;
+}

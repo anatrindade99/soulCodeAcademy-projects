@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Niteo | Contato</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/02_reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/contato.css">
+
+  <!-- Equipe: Aline Martins, Diego Baena Fronteira-->
+</head>
+
+<body>
+  <!-- Header -->
+
+  <header id="header">
+    <nav class="nav_menu">
+      <div class="search">
+        <a href="./index.html"><img src="./img/niteo-logo-70.png" alt="Niteo"></a>
+        <input type="text" placeholder="Buscar">
+        <button>Buscar</button>
+      </div>
+      <ul>
+        <li><a href="./niteo.html">A Niteo</a></li>
+        <li><a href="./servicos.html">Tecnologias e serviços para produtividade</a></li>
+        <li><a href="./contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Contato -->
+
+  <main class="contato">
+
+    <div class="form">
+      <h2>Entre em contato conosco!</h2>
+      <form action="#" method="POST">
+        <div>
+          <input class="inputSize" type="text" placeholder="Informe seu nome">
+        </div>
+        <div>
+          <input type="tel" pattern="^\d{(2)}\d{5}-\d{4}$" id="telefone" placeholder="Telefone (xx)xxxxx-xxxx">
+        </div>
+        <div>
+          <input class="inputSize" type="email" id="email" placeholder="seuemail@dominio.com">
+        </div>
+        <div>
+          <input list="motivo" placeholder="Motivo do contato">
+          <datalist id="motivo">
+            <option value="Informações sobre cursos">
+            <option value="Dúvidas sobre Parcerias">
+            <option value="Trabalhe conosco">
+            <option value="Produtos">
+            <option value="Sobre Business Data">
+            <option value="Outros">
+          </datalist>
+        </div>
+        <div>
+          <textarea placeholder="Deixe sua mensagem"></textarea>
+        </div>
+      </form>
+      <button class="btn">Enviar</button>
+    </div>
+
+    <div class="mapa">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1534694584357!2d-46.656616685022215!3d-23.562930984682083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8e70065e9%3A0x3212f92921c32582!2sAv.%20Paulista%2C%201374!5e0!3m2!1spt-BR!2sbr!4v1614271859436!5m2!1spt-BR!2sbr" width="572" height="520" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="endereco">
+      <img src="./img/niteo-icon-40.png" alt="">
+      <p>+55 11 2344-1818</p>
+      <address>Av. Paulista, 1374, 11º Andar</address>
+      <address>Bela Vista, São Paulo, SP, Brasil</address>
+      <p>CEP 01310-100</p>
+    </div>
+    <div class="midiafoot">
+      <i class="fab fa-whatsapp"></i>
+      <i class="fab fa-facebook"></i>
+      <i class="fab fa-linkedin"></i>
+      <i class="fab fa-youtube"></i>
+
+      <h4>
+        Política de Privacidade
+      </h4>
+      <p>
+        © 2005-2021 Niteo Informática Ltda.
+      </p>
+    </div>
+  </footer>
+
+</body>
+
+<!-- Equipe: Gabriela Padilha Calhau, Rosalyne Duarte-->
+
+</html>
