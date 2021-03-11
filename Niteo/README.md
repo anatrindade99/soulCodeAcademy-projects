@@ -1,6 +1,6 @@
 <div align="center">
  
- # Niteo Website
+ # Niteo Website (MockUp)
  
 
 ![badge](https://badgen.net/badge/languages/3/:color?)
@@ -22,7 +22,7 @@
 
 📝 <a id="project"> **Project** </a>
 
-A website for ![Niteo](www.niteo.com.br) made during Css module on SoulCode Academy's Bootcamp. 
+A website for ![Niteo](www.niteo.com.br) made in group during Css module on SoulCode Academy's Bootcamp. 
 
 ---
 
