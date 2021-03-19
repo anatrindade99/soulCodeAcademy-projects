@@ -1,0 +1,156 @@
+.container-calculadora {
+  width: 900px;
+  height: 1000px;
+  background-color: #fff;
+  border-radius: 12px;
+  border: 1px solid #bebebe;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 100px auto;
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100px;
+  justify-content: center;
+}
+.btn2 {
+  padding: 20px;
+  width: 150px;
+  font-size: 1.4em;
+  background-color: #24b5a9;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  transition: 0.4s;
+  margin: 0 20px;
+}
+
+.btn2:hover {
+  transform: scale(1.1);
+}
+
+/* Início calculadora Normal */
+.normal {
+  width: 850px;
+  height: 800px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.display {
+  width: 100%;
+  height: 150px;
+  font-size: 2em;
+  display: flex;
+}
+.resultado {
+  width: 100%;
+  height: 120px;
+  background: #f2f2f2;
+  font-size: 1.6em;
+  text-align: right;
+}
+.btn3 {
+  background-color: teal;
+  border: none;
+  color: white;
+  font-size: 1em;
+  transition: 0.4s;
+}
+.btn3:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.grid {
+  display: grid;
+  height: 600px;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(2, auto);
+  gap: 3px;
+  font-size: 2em;
+}
+.larger {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  background-color: #272727;
+}
+.bigger {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-color: #272727;
+}
+
+/* Início calculadora Científica */
+.normal {
+  width: 850px;
+  height: 800px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.display {
+  width: 100%;
+  height: 150px;
+  font-size: 2em;
+  display: flex;
+}
+.resultado {
+  width: 100%;
+  height: 120px;
+  background: #f2f2f2;
+  font-size: 1.6em;
+  text-align: right;
+}
+.btn3 {
+  background-color: teal;
+  border: none;
+  color: white;
+  font-size: 1em;
+  transition: 0.4s;
+}
+.btn3:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.grid2 {
+  display: grid;
+  height: 600px;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(2, auto);
+  gap: 3px;
+  font-size: 2em;
+}
+.larger {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  background-color: #272727;
+}
+.bigger {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-color: #272727;
+}
+.larger2c {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-color: #272727;
+}
+
+.larger2p {
+  grid-row-start: 4;
+  grid-row-end: 6;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  background-color: #272727;
+}
+.equal {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  background-color: #272727;
+}

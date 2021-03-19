@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency | KrakenDevs</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/currency.css">
+  <script src="js/script.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+</head>
+
+<body id="body" class="body">
+  <header class="header">
+    <div>
+      <button class="btn" id="btn" onclick="darkMode(1)"><i class="fas fa-moon"></i></button>
+      <button class="btn" id="btn" onclick="darkMode(2)"><i class="fas fa-lightbulb"></i></button>
+      <a href="index.html"><i id="octopus" class="fab fa-octopus-deploy"></i></a>
+    </div>
+    <ul>
+      <li><a href="./calculadora.html">Calculadora</a></li>
+      <li><a href="./cadastro.html">Cadastro</a></li>
+      <li><a href="./currency.html">Currency</a></li>
+    </ul>
+  </header>
+
+  <main class="container-currency" id="container-currency">
+    <h1>Conversor de Moedas</h1>
+    <p>Com esse projeto desenvolvido por nossa equipe, voce poderá realizar o calculo de conversões de moedas à vontade.
+      Basta escolher as opções de moeda de origem e a moeda que você deseja converter, levando em consideração que:
+    <ul>
+      <li>* O campo de valor dever conter apenas números;</li>
+      <li>* A moeda de origem deve ser diferente da moeda de conversão;</li>
+    </ul>
+    </p>
+    <div class="divConversao">
+      <label>Valor:</label>
+      <input type="text" placeholder="Digite o valor a ser convertido" id="valorInput" pattern="[0-9,.]+">
+      <select name="moedaOrigem" id="moedaOrigem">
+        <option>Moeda de Origem</option>
+        <option value="5.65">Dolar Americano</option>
+        <option value="4.53">Dolar Canadense</option>
+        <option value="1">Real Brasileiro</option>
+        <option value="6.73">Euro</option>
+        <option value="7.84">Libra Esterlina</option>
+        <option value="0.062">Peso Argentino</option>
+      </select>
+      <select name="moedaDestino" id="moedaDestino">
+        <option>Moeda de Destino</option>
+        <option value="5.65">Dolar Americano</option>
+        <option value="4.53">Dolar Canadense</option>
+        <option value="1">Real Brasileiro</option>
+        <option value="6.73">Euro</option>
+        <option value="7.84">Libra Esterlina</option>
+        <option value="0.062">Peso Argentino</option>
+      </select>
+    </div>
+    <button class="buttonConversao" id="buttonConversao" onclick="conversao()">Aplicar conversao</button>
+    <div id="conversao">
+
+
+    </div>
+
+  </main>
+  <!-- Não mexer a partir daqui -->
+  <div class="bigSize" onclick="toUpper2()">
+    <button id="big" type="button">
+      A+
+    </button>
+  </div>
+
+  <footer>
+    Todos os direitos reservados.
+    <div id="data-hora"></div>
+  </footer>
+
+  <script>
+    function toUpper2() {
+      if (document.getElementById('big').innerHTML == 'A+') {
+        document.getElementById('body').style.fontSize = '1.3em'
+        document.getElementById('container-currency').style.height = '700px'
+        document.getElementById('big').innerHTML = 'A-'
+      } else {
+        document.getElementById('body').style.fontSize = '1.1em'
+        document.getElementById('container-currency').style.height = '600px'
+        document.getElementById('big').innerHTML = 'A+'
+      }
+    }
+  </script>
+</body>
+
+</html>

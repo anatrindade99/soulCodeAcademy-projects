@@ -1,0 +1,97 @@
+.container-equipe {
+  width: 1200px;
+  height: 1100px;
+  background: url('../imagens/oc3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  margin: 100px auto;
+  align-items: center;
+  padding: 30px;
+}
+.container-equipe h1 {
+  color: #24b5a9;
+  margin-bottom: 30px;
+}
+.container2 {
+  display: grid;
+  grid-template-columns: repeat(2, 500px);
+  grid-template-rows: repeat(2, 300px);
+  gap: 20px;
+}
+.profile {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  transition: 0.4s;
+  opacity: 0.8;
+  border-radius: 3%;
+}
+.profile:hover {
+  transform: scale(1.05);
+}
+
+.descricao {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  align-items: center;
+}
+.descricao h2 {
+  color: #24b5a9;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+.descricao h4 {
+  color: #272727;
+  font-weight: 400;
+  font-size: 1.2em;
+}
+.descricao h6 {
+  color: #272727;
+  font-weight: 300;
+  font-size: 1.1em;
+}
+.descricao p {
+  color: #272727;
+  width: 250px;
+  height: auto;
+  text-align: left;
+  font-weight: 300;
+}
+.foto1,
+.foto2,
+.foto3,
+.foto4 {
+  width: 220px;
+  height: 300px;
+  margin-left: -10px;
+}
+.descricao {
+  width: 280px;
+  height: 300px;
+  padding: 20px;
+}
+
+.foto1 {
+  background: url('../imagens/ana.jfif');
+  background-size: cover;
+}
+.foto2 {
+  background: url('../imagens/diego.jfif');
+  background-size: cover;
+}
+.foto3 {
+  background: url('../imagens/eu.jfif');
+  background-size: cover;
+}
+.foto4 {
+  background: url('../imagens/rosa.jfif');
+  background-size: cover;
+}

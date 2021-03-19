@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Equipe | KrakenDevs</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/equipe.css">
+  <script src="./js/script.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+</head>
+
+<body id="body" class="body">
+  <header class="header">
+    <div>
+      <button class="btn" id="btn" onclick="darkMode(1)"><i class="fas fa-moon"></i></button>
+      <button class="btn" id="btn" onclick="darkMode(2)"><i class="fas fa-lightbulb"></i></button>
+      <a href="index.html"><i class="fab fa-octopus-deploy"></i></a>
+    </div>
+    <ul>
+      <li><a href="./calculadora.html">Calculadora</a></li>
+      <li><a href="./cadastro.html">Cadastro</a></li>
+      <li><a href="./currency.html">Currency</a></li>
+      <li><a href="./equipe.html">Equipe</a></li>
+    </ul>
+  </header>
+
+  <main class="container-equipe">
+    <h1>Nossos Krakens:</h1>
+    <div class="container2">
+      <div class="profile" id="profile">
+        <div class="foto1"></div>
+        <div class="descricao" id="descricao">
+          <h2>Ana</h2>
+          <h4>Web Developer</h4>
+          <h6>Fullstack Jr</h6>
+          <p>Ana Trindade, reside atualmente em Belo Horizonte (MG). Atua como Desenvolvedora Web FullStack com
+            especializacao em Front-End</p>
+        </div>
+      </div>
+      <div class="profile" id="profile">
+        <div class="foto2"></div>
+        <div class="descricao" id="descricao">
+          <h2>Diego</h2>
+          <h4>Web Developer</h4>
+          <h6>Fullstack Jr</h6>
+          <p>Diego Baena, reside atualmente em Sao Paulo (SP). Atua como Desenvolvedor Web FullStack com especializacao em Front-End</p>
+        </div>
+      </div>
+      <div class="profile" id="profile">
+        <div class="foto3"></div>
+        <div class="descricao" id="descricao">
+          <h2>Eliabe</h2>
+          <h4>Web Developer</h4>
+          <h6>Fullstack Jr</h6>
+          <p>Eliabe Barbosa, reside atualmente em Brasilia(DF). Atua como Desenvolvedor Web FullStack com
+            especializacao em Front-End</p>
+        </div>
+      </div>
+      <div class="profile" id="profile">
+        <div class="foto4"></div>
+        <div class="descricao" id="descricao">
+          <h2>Rosa</h2>
+          <h4>Web Developer</h4>
+          <h6>Fullstack Jr</h6>
+          <p>Rosa Duarte, reside atualmente em Recife (PE). Atua como Desenvolvedora Web FullStack com
+            especializacao em Front-End</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- Não mexer a partir daqui -->
+  <div class="bigSize" onclick="toUpper4()">
+    <button id="big" type="button">
+      A+
+    </button>
+  </div>
+
+  <footer>
+    Todos os direitos reservados.
+    <div id="data-hora"></div>
+  </footer>
+  <script>
+    function toUpper4(size) {
+      if (document.getElementById('big').innerHTML == 'A+') {
+        document.getElementById('body').style.fontSize = '1.45em'
+        document.getElementById('big').innerHTML = 'A-'
+      } else {
+        document.getElementById('body').style.fontSize = '1.1em'
+        document.getElementById('big').innerHTML = 'A+'
+      }
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora | KrakenDevs</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/calculadora.css">
+  <script src="js/script.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+  <script>
+    function calcNormal(valor) {
+      if (valor == 1) {
+        document.getElementById('calculadoraNormal').style.display = 'block'
+        document.getElementById('calculadoraCientifica').style.display = 'none'
+      }
+      if (valor == 2) {
+        document.getElementById('calculadoraCientifica').style.display = 'block'
+        document.getElementById('calculadoraNormal').style.display = 'none'
+      }
+    }
+  </script>
+  <style>
+    #calculadoraNormal,
+    #calculadoraCientifica {
+      display: none;
+    }
+  </style>
+</head>
+
+<body id="body" class="body">
+  <header class="header">
+    <div>
+      <button class="btn" id="btn" onclick="darkMode(1)"><i class="fas fa-moon"></i></button>
+      <button class="btn" id="btn" onclick="darkMode(2)"><i class="fas fa-lightbulb"></i></button>
+      <a href="index.html"><i class="fab fa-octopus-deploy"></i></a>
+    </div>
+    <ul>
+      <li><a href="./calculadora.html">Calculadora</a></li>
+      <li><a href="./cadastro.html">Cadastro</a></li>
+      <li><a href="./currency.html">Currency</a></li>
+    </ul>
+  </header>
+
+  <!-- Início da section Calculadora-->
+  <main class="container-calculadora">
+    <div class="buttons">
+      <button class="btn2" id="normal" onclick="calcNormal(1)">Normal</button>
+      <button class="btn2" id="cientifica" onclick="calcNormal(2)">Cientifica</button>
+    </div>
+    <!-- Inicio da calculadora CIENTÍFICA -->
+
+    <div id="calculadoraCientifica">
+      <div id="normal" class="normal">
+        <div class="display"><input type="text" class="resultado" id="resultado" readonly></div>
+        <div class="buttons grid2">
+          <button type="button" onclick="calcular('acao', 'c')" id="btn3" class="btn3 larger2c">C</button>
+          <button type="button" onclick="calcular('acao', '4')" id="btn3" class="btn3 larger2">√</button>
+          <button type="button" onclick="calcular('acao', '***')" id="btn3" class="btn3 larger2">π</button>
+          <button type="button" onclick="calcular('acao','2')" id="btn3" class="btn3 larger2">X²</button>
+          <button type="button" onclick="calcular('acao', '3')" id="btn3" class="btn3 larger2">X³</button>
+          <button type="button" onclick="calcular('acao', '/')" id="btn3" class="btn3">/</button>
+          <button type="button" onclick="calcular('acao', '*')" id="btn3" class="btn3">*</button>
+          <button type="button" onclick="calcular('valor', '7')" id="btn3" class="btn3">7</button>
+          <button type="button" onclick="calcular('valor', '8')" id="btn3" class="btn3">8</button>
+          <button type="button" onclick="calcular('valor', '9')" id="btn3" class="btn3">9</button>
+          <button type="button" onclick="calcular('acao', '-')" id="btn3" class="btn3">-</button>
+          <button type="button" onclick="calcular('valor', '4')" id="btn3" class="btn3">4</button>
+          <button type="button" onclick="calcular('valor', '5')" id="btn3" class="btn3">5</button>
+          <button type="button" onclick="calcular('valor', '6')" id="btn3" class="btn3">6</button>
+          <button type="button" onclick="calcular('valor', '1')" id="btn3" class="btn3">1</button>
+          <button type="button" onclick="calcular('valor', '2')" id="btn3" class="btn3">2</button>
+          <button type="button" onclick="calcular('valor', '3')" id="btn3" class="btn3">3</button>
+          <button type="button" onclick="calcular('acao', '.')" id="btn3" class="btn3">.</button>
+          <button type="button" onclick="calcular('acao', '+')" id="btn3" class="btn3 larger2p">+</button>
+
+          <button type="button" onclick="calcular('valor', '0')" id="btn3" class="btn3 bigger2">0</button>
+          <button type="button" onclick="calcular('acao', '=')" id="btn3" class="btn3 equal">=</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Não mexer a partir daqui -->
+
+
+    <!-- Inicio da calculadora normal -->
+    <div id="calculadoraNormal">
+      <div id="normal" class="normal">
+        <div class="display"><input type="text" class="resultado" id="resultado2" readonly></div>
+        <div class="buttons grid">
+          <button type="button" onclick="calcular2('acao', 'c')" id="btn3" class="btn3 larger">C</button>
+          <button type="button" onclick="calcular2('acao', '/')" id="btn3" class="btn3">/</button>
+          <button type="button" onclick="calcular2('valor', '7')" id="btn3" class="btn3">7</button>
+          <button type="button" onclick="calcular2('valor', '8')" id="btn3" class="btn3">8</button>
+          <button type="button" onclick="calcular2('valor', '9')" id="btn3" class="btn3">9</button>
+          <button type="button" onclick="calcular2('acao', '*')" id="btn3" class="btn3">*</button>
+          <button type="button" onclick="calcular2('valor', '4')" id="btn3" class="btn3">4</button>
+          <button type="button" onclick="calcular2('valor', '5')" id="btn3" class="btn3">5</button>
+          <button type="button" onclick="calcular2('valor', '6')" id="btn3" class="btn3">6</button>
+          <button type="button" onclick="calcular2('acao', '-')" id="btn3" class="btn3">-</button>
+          <button type="button" onclick="calcular2('valor', '1')" id="btn3" class="btn3">1</button>
+          <button type="button" onclick="calcular2('valor', '2')" id="btn3" class="btn3">2</button>
+          <button type="button" onclick="calcular2('valor', '3')" id="btn3" class="btn3">3</button>
+          <button type="button" onclick="calcular2('acao', '+')" id="btn3" class="btn3">+</button>
+          <button type="button" onclick="calcular2('valor', '0')" id="btn3" class="btn3 bigger">0</button>
+          <button type="button" onclick="calcular2('acao', '.')" id="btn3" class="btn3">.</button>
+          <button type="button" onclick="calcular2('acao', '=')" id="btn3" class="btn3 ">=</button>
+        </div>
+      </div>
+    </div>
+    <!-- Não mexer a partir daqui -->
+
+
+  </main>
+  <div class="bigSize" onclick="toUpper()">
+    <button id="big" type="button">
+      A+
+    </button>
+  </div>
+  <footer>
+    Todos os direitos reservados.
+    <div id="data-hora"></div>
+  </footer>
+</body>
+
+</html>
