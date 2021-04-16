@@ -1,0 +1,483 @@
+/*======================== GLOBAL ======================== */
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: #090909;
+  font-family: 'Maven Pro', sans-serif;
+  color: #eee;
+}
+h1 {
+  font-weight: 700;
+  font-size: 2em;
+  margin-bottom: 25px;
+  color: #00a6e2;
+  text-align: center;
+}
+
+h1:after {
+  content: '';
+  display: block;
+  width: 120px;
+  height: 3px;
+  background: #00a6e2;
+  margin: 8px auto;
+}
+h2 {
+  font-size: 400;
+  font-size: 1.8em;
+  color: #00a6e2;
+  margin: 25px 0;
+  font-weight: 600;
+}
+
+p {
+  font-size: 1.1em;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+}
+
+/* ======================= NAV ======================== */
+.navbar {
+  background-color: #090909;
+}
+.brandlogo-img {
+  width: 60px;
+  padding: 20px 0;
+  margin-left: 30px;
+}
+
+/*======================== HERO ========================*/
+
+.hero {
+  background: url('../img/hero7.jpg');
+  background-position: center;
+  background-size: cover;
+  filter: grayscale(100%);
+  width: 100%;
+  height: 95vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.caption {
+  position: absolute;
+  z-index: 1;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.2);
+  top: 370px;
+  left: 700px;
+  border: 1px solid black;
+  padding: 20px;
+}
+.caption > h1 {
+  color: black;
+  font-size: 3em;
+}
+.caption > h1:after {
+  content: '';
+  display: block;
+  width: 120px;
+  height: 3px;
+  background: black;
+  margin: 8px auto;
+}
+.caption > p {
+  max-width: 800px;
+  text-align: center;
+  font-size: 1.3em;
+}
+
+/*======================== AUTOMATION SECTION ========================*/
+.autiomation {
+  margin: 10px 0;
+  padding: 40px;
+}
+.autiomation p {
+  max-width: 650px;
+}
+.container-animation {
+  background: url('../img/alexa.png');
+  background-position: right;
+  background-size: 40%;
+  background-repeat: no-repeat;
+}
+.container-animation > h1 {
+  text-align: left;
+}
+.container-animation > h1:after {
+  content: '';
+  display: block;
+  width: 120px;
+  height: 3px;
+  background: #00a6e2;
+  margin: 8px 80px;
+}
+
+.container {
+  padding: 30px;
+}
+
+/*======================== PARALAX ========================*/
+.parallax {
+  /* The image used */
+  background-image: url('../img/smart1.jpg');
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.section {
+  display: flex;
+  color: #090909;
+  justify-content: center;
+  align-items: center;
+  filter: brightness(50%);
+}
+.section h2 {
+  letter-spacing: 1.4px;
+  font-size: 1.8em;
+  border-bottom: 2px solid #090909;
+  color: #090909;
+  background-color: white;
+}
+
+/*======================== SECURITY SECTION ========================*/
+.security {
+  background-color: #eee;
+  color: #090909;
+  padding: 50px 0;
+}
+.security p {
+  margin: 15px 0;
+}
+.produto {
+  margin-top: 50px;
+}
+.fa-lock,
+.fa-wifi,
+.fa-fingerprint,
+.fa-id-card {
+  color: #090909;
+  background-color: #00a6e2;
+  padding: 20px;
+  font-size: 2em;
+  border-radius: 50%;
+}
+.fa-wifi {
+  font-size: 1.8em;
+}
+.fa-lock:hover,
+.fa-wifi:hover,
+.fa-fingerprint:hover,
+.fa-id-card:hover {
+  transition: 0.4s;
+}
+.fa-lock:hover,
+.fa-wifi:hover,
+.fa-fingerprint:hover,
+.fa-id-card:hover {
+  transform: translate(0, -8px);
+}
+.row-produto {
+  margin-bottom: 40px;
+}
+
+/* ========================PARALAX 2 ========================*/
+.parallax2 {
+  /* The image used */
+  background-image: url('../img/security.jpg');
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.section2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: brightness(70%);
+}
+.section2 h2 {
+  letter-spacing: 1.4px;
+  font-size: 1.8em;
+  border-bottom: 2px solid #090909;
+  color: #090909;
+  background-color: white;
+}
+
+/* ========================HOW CONTROL SECTION ========================*/
+.controls {
+  background-color: #090909;
+  padding: 50px 0;
+}
+
+.control1 {
+  background: url('../img/01.jpg');
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+.control2 {
+  background: url('../img/02.jpg');
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+.control3 {
+  background: url('../img/03.jpg');
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+.control4 {
+  background: url('../img/04.png');
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+.control5 {
+  background: url('../img/05.jpg');
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+.control6 {
+  background: url('../img/alexa.png');
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+.control7 {
+  background: url('../img/07.png');
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+.control8 {
+  background: url('../img/08.png');
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+/*======================== HELP ========================*/
+.help {
+  background-color: #00a6e2;
+}
+.help h4 {
+  margin: 20px 0;
+}
+.col2,
+.col3,
+.col4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.col2 p,
+.col3 p,
+.col4 p {
+  max-width: 200px;
+  margin-left: 15px;
+}
+.fa-tools,
+.fa-dollar-sign,
+.fa-award {
+  font-size: 2em;
+}
+/*======================== FOOTER ========================*/
+.footer {
+  background-color: #090909;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+footer img {
+  width: 80px;
+  margin-bottom: 20px;
+}
+.location {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+}
+.location p {
+  text-align: center;
+  max-width: 400px;
+}
+.others {
+  display: flex;
+  flex-direction: column;
+}
+
+.others form {
+  display: flex;
+}
+.socials {
+  display: flex;
+  flex-direction: column;
+}
+.socials a {
+  margin-top: 15px;
+}
+
+/*======================== ARROW UP ========================*/
+.arrowUp {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: white;
+  padding: 6px 12px;
+  color: #090909;
+  font-size: 1.4em;
+  border-radius: 50%;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+}
+
+/*======================== MEDIA QUERIES ========================*/
+
+@media only screen and (max-width: 1024px) {
+  .caption {
+    position: absolute;
+    z-index: 1;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.2);
+    top: 370px;
+    left: 280px;
+    border: 1px solid black;
+    padding: 20px;
+  }
+  .section2 h2 {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .socials {
+    margin: 0 auto;
+  }
+  .section2 h2 {
+    text-align: center;
+  }
+  .container-animation {
+    background: url('../img/alexa.png');
+    background-position: right;
+    background-size: 60%;
+    background-repeat: no-repeat;
+  }
+  .caption {
+    position: absolute;
+    z-index: 1;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.2);
+    top: 370px;
+    left: 150px;
+    border: 1px solid black;
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .section2 {
+    display: none;
+  }
+  aside h1 {
+    margin-top: 40px;
+  }
+  .socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container-animation {
+    background: url('../img/alexa.png');
+    background-position: right;
+    background-size: 80%;
+    background-repeat: no-repeat;
+  }
+  .caption {
+    position: absolute;
+    z-index: 1;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.2);
+    top: 370px;
+    left: 30px;
+    border: 1px solid black;
+    padding: 20px;
+  }
+}
+
+/* SCROLL REVEAL */
+.has-scroll-reveal {
+  opacity: 0;
+  animation-play-state: paused;
+}
+
+.animated {
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-play-state: running;
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 2.5rem, 0);
+    transform: translate3d(0, 2.5rem, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}

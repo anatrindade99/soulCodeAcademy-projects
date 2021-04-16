@@ -1,0 +1,74 @@
+/* HERO */
+
+.automaresid {
+  background: url('../img/hero-autoresid.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 550px;
+}
+/* INÍCIO MAIN */
+.autoresid-main {
+  width: 100%;
+  height: auto;
+  padding: 60px 30px;
+  background-color: #eee;
+  color: #090909;
+}
+.autoresid-main h3 {
+  margin: 20px 0;
+}
+
+.aquire {
+  display: flex;
+  flex-direction: column;
+}
+.aquire a {
+  margin: 20px 0;
+}
+
+/* VANTAGENS */
+.vantagens {
+  width: 100%;
+  height: auto;
+  padding: 50px 0;
+  background-color: #ccc;
+  color: #090909;
+}
+.row-vantagens {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.vantagens h1 {
+  margin-bottom: 50px;
+}
+
+.fa-bed,
+.fa-lightbulb,
+.fa-tree,
+.fa-user {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 576px) {
+  .frameYTB {
+    width: 350px;
+    margin: 20px auto;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .frameYTB {
+    width: 250px;
+    margin: 20px auto;
+  }
+}
+@media only screen and (max-width: 994px) {
+  .frameYTB {
+    margin: 20px auto;
+  }
+}
