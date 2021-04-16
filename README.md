@@ -15,3 +15,5 @@ In this repo I will share the projects that I've made during the Bootcamp on Sou
 ![Niteo Website](https://github.com/diegobaena89/soulCodeAcademy-projects/tree/main/Niteo)
 
 ![Javascript Project](https://github.com/diegobaena89/soulCodeAcademy-projects/tree/main/JS)
+
+![Automatize](https://github.com/diegobaena89/soulCodeAcademy-projects/tree/main/Automatize)
